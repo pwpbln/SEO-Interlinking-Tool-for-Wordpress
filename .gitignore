@@ -1,0 +1,51 @@
+# Site-spezifischer SEO-Kontext (persönliche Inhalte)
+seo-kontext.md
+
+# Credentials – niemals einchecken
+env.local
+.env
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Gecrawlte Artikel und Embeddings (site-spezifisch)
+data/parsed/*.json
+data/embeddings/vectors.npz
+data/embeddings/index.json
+
+# Taxonomie-Exporte und Pool-Dateien (site-spezifisch)
+data/taxonomie/*.json
+
+# Batch-Dateien (enthalten Artikel-Volltext)
+analysis/batches/*.md
+
+# KI-Proposals und Cluster-Ergebnisse
+analysis/proposals/*.json
+analysis/clusters/
+
+# Freigegebene und übertragene Proposals
+output/approved/links/*.json
+output/approved/links/done/*.json
+output/approved/tags/*.json
+output/approved/tags/done/*.json
+output/approved/kategorien/*.json
+output/approved/kategorien/done/*.json
+output/zurueckgestellt/*.json
+
+# Logs
+logs/*.log
+
+# Generierte Dateien
+docs/linguist-prompt-compiled.md
+
+# macOS
+.DS_Store
+
+# Temporäre Fortschrittsdatei
+/tmp/seo_crawler_progress.json
+
+# IDE / Claude Code
+.claude/settings.local.json
